@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "c4619513-885e-47b3-b9e9-c62f94e195bd",
+		"name": "credoweb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"test@test.com\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Down\",\n  \"type\": \"patient\",\n  \"workplace_id\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test_test@test.com\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Down\",\n    \"type\": \"patient\",\n    \"workplace_id\": \"\",\n    \"id\": \"10d08201-4b25-4ef5-80d0-41462acffcbb\",\n    \"created_at\": 1644955854,\n    \"_id\": \"vz7rDaKFYosov5t0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/users/10d08201-4b25-4ef5-80d0-41462acffcbb",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"10d08201-4b25-4ef5-80d0-41462acffcbb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/users/10d08201-4b25-4ef5-80d0-41462acffcbb",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"10d08201-4b25-4ef5-80d0-41462acffcbb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/users/fce3e249-9f4e-46ce-a43c-b418591c1382",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"fce3e249-9f4e-46ce-a43c-b418591c1382"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create hospital",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"name\": \"Pirogov\",\n   \"address\": \"bul. Totleben 21\",\n   \"phone\": \"00359123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/hospitals",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update hospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"name\": \"Nikolay Pirogov\",\n   \"address\": \"bul. Totleben 21\",\n   \"phone\": \"00359123456789\",\n   \"id\": \"c6d62264-1a0b-432c-b0d6-b43e0fe82645\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/hospitals/c6d62264-1a0b-432c-b0d6-b43e0fe82645",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hospitals",
+						"c6d62264-1a0b-432c-b0d6-b43e0fe82645"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hospitals/c6d62264-1a0b-432c-b0d6-b43e0fe82645",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hospitals",
+						"c6d62264-1a0b-432c-b0d6-b43e0fe82645"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete hospital",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hospitals/edff7f31-5659-441f-8fe9-0cbeecc7feb4",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hospitals",
+						"edff7f31-5659-441f-8fe9-0cbeecc7feb4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/list/users?limit=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"list",
+						"users"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list hospitals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/list/hospitals",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"list",
+						"hospitals"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTP method validation",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTP method validation 2",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user creation data validation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user creation data validation 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"test@test.com\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Down\",\n  \"type\": \"doctor\",\n  \"workplace_id\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hospital creation data validation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hospitals",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "superSecurePassword",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "apiUser",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "62d8f930-7160-455a-8bdb-783bd4af80f8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f473b817-7e32-4fed-a56a-6c487bad1a0c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "52fa687a-64d1-4dc9-9d1c-ddb47a8128b1",
+			"key": "base_url",
+			"value": "localhost:3000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

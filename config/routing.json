@@ -1,0 +1,18 @@
+{
+  "user": {
+    "path": "/api/users/:id?",
+    "callback": "users"
+  },
+  "hospital": {
+    "path": "/api/hospitals/:id?",
+    "callback": "hospitals"
+  },
+  "users-listing": {
+    "path": "/api/list/users",
+    "callback": "users-listing"
+  },
+  "hospitals-listing": {
+    "path": "/api/list/hospitals",
+    "callback": "hospitals-listing"
+  }
+}

@@ -1,0 +1,3 @@
+{"_id":"test@test.com","id":"unique id","email":"email","first_name":"first name","last_name":"last name","type":"patient/doctor","workplace_id":"(hospital) - only IF a user is type doctor","created_ad":"the date and time the user was added"}
+{"_id":"testw222@test.com","id":"unique id","email":"email","first_name":"first name","last_name":"last name","type":"patient/doctor","workplace_id":"(hospital) - only IF a user is type doctor","created_ad":"the date and time the user was added"}
+{"email":"test_test@test.com","first_name":"John","last_name":"Down","type":"patient","workplace_id":"","id":"10d08201-4b25-4ef5-80d0-41462acffcbb","created_at":1644955854,"_id":"vz7rDaKFYosov5t0"}
